@@ -42,10 +42,11 @@ html,body{
     width:25%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap:10px;
+    gap:15px;
 }
-/* h4{  */
+.elem h2{
+    font-weight: 600;
+} 
 .box{
     width: 50px;
     padding:2px;
@@ -56,4 +57,30 @@ html,body{
     background-color: rgb(255, 255, 255);
     color:rgb(13, 116, 180);
     font-size:25px;
+    font-weight: 700;
+}
+.pbottom{
+    height:calc(100% - 80px);
+    width:100%;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap:wrap;
+    gap:5px;
+    padding:8px 8px;
+}
+.bubble{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-color: rgb(67, 155, 210);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:#ffffff;
+    font-size:25px;
+    font-weight:400;
+}
+.bubble:hover{
+    cursor:pointer;
+    background-color: rgb(3, 134, 215);
 }
