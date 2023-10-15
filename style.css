@@ -57,20 +57,3 @@ html,body{
     color:rgb(13, 116, 180);
     font-size:25px;
 }
-.pbottom{
-    height:calc(100% - 80px);
-    width:100%;
-    /* background-color: black; */
-    display: flex;
-    /* align-items: center;
-    justify-content: center; */
-    flex:flex-wrap;
-    gap:5px;
-    padding:8px 8px;
-}
-.bubble{
-    height: 50px;
-    width:50px;
-    border-radius: 50%;
-    background-color: rgb(67, 155, 210);
-}
