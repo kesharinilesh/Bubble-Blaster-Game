@@ -1,6 +1,7 @@
-var timer=4;
+var timer=60;
 var score=0;
 var val=0;
+var flag=false;
 
 function makeBubble(){
     var bubbler = "";
@@ -24,6 +25,8 @@ function runtimer(){
         document.querySelector("#timerval").innerHTML=timer;}
         else{
             clearInterval(timer);
+            document.querySelector(".ptop").innerHTML=`<h1>Score: ${score}</h1>`;
+            document.querySelector(".ptop").style.justifyContent="Center";
             document.querySelector(".pbottom").innerHTML="<h1>Game Over</h1>";
         }
 },1000);
@@ -36,13 +39,16 @@ function increaseScore(){
 
 
 makeBubble();
-
-runtimer();
+// runtimer();
 
 
 document.querySelector(".pbottom").addEventListener("click",function(dets){
     var clickednum=(Number(dets.target.textContent));
     if (clickednum===val){
+        if (flag==false){  
+            runtimer();
+            flag=true;
+        }
         increaseScore();
         makeBubble();
         hit();
