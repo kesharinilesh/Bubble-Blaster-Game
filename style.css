@@ -66,6 +66,10 @@ html,body{
     /* background-color: black; */
     display: flex;
     flex-wrap:wrap;
+    align-items: center;
+    justify-content: center;
+    color:rgb(7, 111, 176);
+    font-size: 25px;
     gap:5px;
     padding:8px 8px;
 }
