@@ -75,8 +75,8 @@ html,body{
     padding:8px 8px;
 }
 .bubble{
-    height: 49px;
-    width:49px;
+    height: 3.2vw;
+    width:3.2vw;
     border-radius: 50%;
     background-color: rgb(67, 155, 210);
     display:flex;
